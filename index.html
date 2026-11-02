@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop Down Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>CSS Positioning: Drop Down Menu</h1>
+    <p>
+      <strong>position: relative</strong> and
+      <strong>position: absolute</strong>
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+
+      <li class="has-dropdown">
+        <a href="#products">Products</a>
+
+        <ul class="dropdown">
+          <li><a href="#widgets">Widgets</a></li>
+          <li><a href="#gadgets">Gadgets</a></li>
+          <li><a href="#gizmos">Gizmos</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <h2>How Drop Down Menus Work</h2>
+
+    <p>
+      The parent list item needs
+      <strong>position: relative</strong>
+      so the dropdown menu can be positioned
+      with <strong>position: absolute</strong>.
+    </p>
+
+    <p>
+      The submenu is hidden by default using
+      <strong>display: none</strong>.
+      When the user hovers over Products,
+      the submenu appears using
+      <strong>display: block</strong>.
+    </p>
+
+    <p>
+      This allows the dropdown menu to appear
+      directly underneath the Products tab
+      without moving the other content.
+    </p>
+  </main>
+
+</body>
+</html>
+ 
